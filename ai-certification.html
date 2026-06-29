@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Certification | NIPAS Education System </title>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+       <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header>
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.webp" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Navigation -->
+        <ul class="nav-links">
+
+            <li><a href="index.html" class="active">Home</a></li>
+
+            <li><a href="#">About</a></li>
+
+            <li class="dropdown">
+
+                <a href="#" class="dropdown-toggle">
+                    Focus <i class="fas fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="nipas-college.html">NIPAS College</a></li>
+                    <li><a href="vocational-training.html">Vocational Training</a></li>
+                    <li><a href="ai-certification.html">AI Certification</a></li>
+                    <li><a href="skill-development.html">Skills Development</a></li>
+                </ul>
+
+            </li>
+
+            <li><a href="#">Contact Us</a></li>
+
+        </ul>
+
+        <!-- Right -->
+        <div class="nav-right">
+
+            <!-- <a href="#" class="admission-btn">
+                Admissions 2024-25
+            </a> -->
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </div>
+
+    </nav>
+</header>
+
+<script>
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+const dropdown = document.querySelector(".dropdown");
+const dropdownToggle = document.querySelector(".dropdown-toggle");
+
+// Mobile Menu
+
+menuBtn.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+
+        menuBtn.innerHTML='<i class="fas fa-times"></i>';
+
+    }else{
+
+        menuBtn.innerHTML='<i class="fas fa-bars"></i>';
+
+        dropdown.classList.remove("active");
+
+    }
+
+});
+
+// Mobile Dropdown
+
+dropdownToggle.addEventListener("click", function(e){
+
+    if(window.innerWidth <= 991){
+
+        e.preventDefault();
+
+        dropdown.classList.toggle("active");
+
+    }
+
+});
+
+// Resize Reset
+
+window.addEventListener("resize",()=>{
+
+    if(window.innerWidth > 991){
+
+        navLinks.classList.remove("active");
+        dropdown.classList.remove("active");
+        menuBtn.innerHTML='<i class="fas fa-bars"></i>';
+
+    }
+
+});
+</script>
+
+
+<!-- Hero -->
+ <section class="hero-slider">
+
+    <!-- Slide 1 -->
+    <div class="hero-slide" style="background-image:url('https://www.inside.unsw.edu.au/sites/default/files/article/AdobeStock_413459012%20AI%201200px.jpg');">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <span>Welcome to NIPAS</span>
+
+            <h1>
+                AI Certifications for the Future Workforce
+            </h1>
+
+            <p>
+                Gain globally relevant Artificial Intelligence certifications designed to prepare students and professionals for tomorrow's technology-driven careers through practical learning and industry-focused training.
+            </p>
+
+            <a href="#" class="hero-btn">
+                Explore Programs
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about-section">
+
+    <div class="container">
+
+        <div class="about-left">
+
+            <span class="sub-title">WELCOME TO</span>
+
+            <h2>
+                NIPAS AI Certifications
+            </h2>
+
+            <p class="intro">
+                NIPAS AI Certifications empower learners with the knowledge and
+                practical skills needed to thrive in the era of Artificial
+                Intelligence. Our certification programs combine expert-led
+                training, hands-on projects, and real-world applications to help
+                students, professionals, and entrepreneurs build successful
+                careers in today's AI-driven world.
+            </p>
+
+            <div class="image-wrapper">
+
+                <img src="https://images.wallpapersden.com/image/download/surreal-psychedelic-landscape-amazing-ai-art_bmdlam6UmZqaraWkpJRobWllrWdma2U.jpg"
+                    class="main-img">
+
+            </div>
+
+        </div>
+
+        <div class="about-right">
+
+            <div class="point">
+                <i class="fa-solid fa-chevron-right"></i>
+                <p>Comprehensive AI certification programs designed for beginners and professionals.</p>
+            </div>
+
+            <div class="point">
+                <i class="fa-solid fa-chevron-right"></i>
+                <p>Hands-on training in Generative AI, Prompt Engineering, and Machine Learning.</p>
+            </div>
+
+            <div class="point">
+                <i class="fa-solid fa-chevron-right"></i>
+                <p>Learn through real-world projects, case studies, and practical AI applications.</p>
+            </div>
+
+            <div class="point">
+                <i class="fa-solid fa-chevron-right"></i>
+                <p>Industry-relevant curriculum taught by experienced AI professionals.</p>
+            </div>
+
+            <div class="point">
+                <i class="fa-solid fa-chevron-right"></i>
+                <p>Develop future-ready skills to enhance career opportunities, freelancing, and business growth.</p>
+            </div>
+
+            <div class="counter-box">
+
+                <div class="counter">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                    <h3>10+</h3>
+
+                    <span>AI Certification Programs</span>
+
+                </div>
+
+                <div class="counter">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <h3>500+</h3>
+
+                    <span>Certified Learners</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Mission Vision -->
+<section class="mission-vision">
+
+    <div class="mission-box">
+
+        <div class="content">
+
+            <span class="sub-title">AI LEARNING</span>
+
+            <h2>Master the Future of Technology</h2>
+
+            <p>
+                Our AI certification programs are designed to provide practical,
+                hands-on experience with the latest artificial intelligence
+                technologies. From Prompt Engineering and Generative AI to
+                Machine Learning fundamentals, students gain the skills needed
+                to solve real-world challenges and build innovative AI solutions.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="vision-box">
+
+        <div class="content">
+
+            <span class="sub-title">CAREER ADVANCEMENT</span>
+
+            <h2>Become AI Industry Ready</h2>
+
+            <p>
+                NIPAS AI Certifications prepare learners for the rapidly growing
+                AI industry through expert-led training, project-based learning,
+                and globally relevant skills. Whether you're a student,
+                professional, freelancer, or entrepreneur, our certifications
+                help you stay ahead in the age of Artificial Intelligence.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="programs">
+
+    <div class="section-heading">
+
+        <span>AI CERTIFICATION PROGRAMS</span>
+
+        <h2>Explore Our AI Courses</h2>
+
+        <p>
+            Gain future-ready AI skills through hands-on training, expert guidance,
+            and industry-focused certification programs designed for students and professionals.
+        </p>
+
+    </div>
+
+    <div class="program-grid">
+
+        <!-- Card 1 -->
+        <div class="program-card">
+
+            <div class="program-icon">
+                <i class="fa-solid fa-robot"></i>
+            </div>
+
+            <h3>Generative AI</h3>
+
+            <p>
+                Learn to create intelligent AI-powered content, automate workflows,
+                and utilize the latest generative AI tools.
+            </p>
+
+            <ul>
+                <li>ChatGPT & AI Tools</li>
+                <li>Content Generation</li>
+                <li>AI Automation</li>
+            </ul>
+
+            <a href="#" class="learn-btn">
+                Apply Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="program-card">
+
+            <div class="program-icon">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+
+            <h3>Prompt Engineering</h3>
+
+            <p>
+                Master the art of writing effective prompts to maximize the
+                capabilities of modern AI systems.
+            </p>
+
+            <ul>
+                <li>Prompt Design</li>
+                <li>AI Productivity</li>
+                <li>Business Applications</li>
+            </ul>
+
+            <a href="#" class="learn-btn">
+                Apply Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="program-card">
+
+            <div class="program-icon">
+                <i class="fa-solid fa-brain"></i>
+            </div>
+
+            <h3>Machine Learning</h3>
+
+            <p>
+                Understand machine learning concepts, model development,
+                and real-world AI applications.
+            </p>
+
+            <ul>
+                <li>Model Training</li>
+                <li>Data Analysis</li>
+                <li>AI Algorithms</li>
+            </ul>
+
+            <a href="#" class="learn-btn">
+                Apply Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <!-- Card 4 -->
+        <div class="program-card">
+
+            <div class="program-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
+
+            <h3>AI for Business</h3>
+
+            <p>
+                Discover how Artificial Intelligence can improve business
+                operations, marketing, customer service, and decision-making.
+            </p>
+
+            <ul>
+                <li>Business Automation</li>
+                <li>AI Strategy</li>
+                <li>Productivity Tools</li>
+            </ul>
+
+            <a href="#" class="learn-btn">
+                Apply Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="cta-section">
+
+    <div class="cta-overlay"></div>
+
+    <div class="cta-content">
+
+        <span>START LEARNING AI TODAY</span>
+
+        <h2>
+            Unlock the Power of <br>
+            Artificial Intelligence
+        </h2>
+
+        <p>
+            Join NIPAS AI Certifications and gain practical experience with
+            Generative AI, Prompt Engineering, Machine Learning, and other
+            cutting-edge technologies. Our certification programs are designed
+            to help students and professionals build future-ready skills for
+            high-demand careers in the AI industry.
+        </p>
+
+        <div class="cta-buttons">
+            <a href="#" class="btn-primary">Enroll Now</a>
+            <a href="#" class="btn-outline">Explore AI Courses</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="affiliation">
+
+    <div class="container">
+
+        <span class="section-subtitle">AI EDUCATION</span>
+
+        <h2>Building the Next Generation of AI Professionals</h2>
+
+        <p>
+            NIPAS AI Certifications is committed to delivering high-quality,
+            industry-relevant Artificial Intelligence education through practical,
+            project-based learning. Our certification programs are carefully
+            designed to help learners understand modern AI concepts while gaining
+            hands-on experience with the tools and technologies used by leading
+            organizations around the world.
+        </p>
+
+        <p>
+            Whether you are a student, working professional, entrepreneur, or
+            freelancer, our AI courses provide the knowledge and confidence needed
+            to leverage Artificial Intelligence in real-world scenarios. With
+            expert instructors, interactive training sessions, and practical
+            assignments, learners develop valuable skills that can be applied
+            across multiple industries and career paths.
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <!-- About -->
+        <div class="footer-box">
+
+            <img src="images/logo.webp" alt="NIPAS Logo" class="footer-logo">
+
+            <p>
+                NIPAS College of Science & Technology is committed to delivering
+                quality education through innovation, practical learning, and
+                career-oriented programs that empower students for a brighter future.
+            </p>
+
+            <div class="footer-social">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            </div>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="#">About</a></li>
+
+                <li><a href="#">Contact Us</a></li>
+
+                <li><a href="nipas-college.html">NIPAS College</a></li>
+
+                <li><a href="vocational-training.html">Vocational Training</a></li>
+
+                <li><a href="ai-certification.html">AI Certification</a></li>
+                <li><a href="skill-development.html">Skill Development</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+
+        <div class="footer-box">
+
+            <h3>Contact Info</h3>
+
+            <ul class="contact-list">
+
+                <li>
+                    <i class="fas fa-location-dot"></i>
+                    Main G.T Road, Tarnol, Islamabad
+                </li>
+
+                <li>
+                    <i class="fas fa-phone"></i>
+                    +92 51 268 092
+                </li>
+
+                <li>
+                    <i class="fas fa-mobile-screen"></i>
+                    +92 333 6534464
+                </li>
+
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    info@nipas.edu.pk
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Map -->
+
+        <div class="footer-box">
+
+            <h3>Find Us</h3>
+
+            <iframe
+                src="https://www.google.com/maps?q=Islamabad&output=embed"
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 NIPAS College of Science & Technology. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+    
+</body>
+</html>
