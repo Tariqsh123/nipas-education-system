@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIPAS Education System </title>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+       <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header>
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.webp" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Navigation -->
+        <ul class="nav-links">
+
+            <li><a href="index.html" class="active">Home</a></li>
+
+            <li><a href="about-us.html">About</a></li>
+
+            <li class="dropdown">
+
+                <a href="#" class="dropdown-toggle">
+                    Focus <i class="fas fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="nipas-college.html">NIPAS College</a></li>
+                    <li><a href="vocational-training.html">Vocational Training</a></li>
+                    <li><a href="ai-certification.html">AI Certification</a></li>
+                    <li><a href="skill-development.html">Skills Development</a></li>
+                </ul>
+
+            </li>
+
+            <li><a href="contact-us.html">Contact Us</a></li>
+
+        </ul>
+
+        <!-- Right -->
+        <div class="nav-right">
+
+            <!-- <a href="#" class="admission-btn">
+                Admissions 2024-25
+            </a> -->
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </div>
+
+    </nav>
+</header>
+
+<script>
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+const dropdown = document.querySelector(".dropdown");
+const dropdownToggle = document.querySelector(".dropdown-toggle");
+
+// Mobile Menu
+
+menuBtn.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+
+        menuBtn.innerHTML='<i class="fas fa-times"></i>';
+
+    }else{
+
+        menuBtn.innerHTML='<i class="fas fa-bars"></i>';
+
+        dropdown.classList.remove("active");
+
+    }
+
+});
+
+// Mobile Dropdown
+
+dropdownToggle.addEventListener("click", function(e){
+
+    if(window.innerWidth <= 991){
+
+        e.preventDefault();
+
+        dropdown.classList.toggle("active");
+
+    }
+
+});
+
+// Resize Reset
+
+window.addEventListener("resize",()=>{
+
+    if(window.innerWidth > 991){
+
+        navLinks.classList.remove("active");
+        dropdown.classList.remove("active");
+        menuBtn.innerHTML='<i class="fas fa-bars"></i>';
+
+    }
+
+});
+</script>
+
+
+<!-- =========================
+        CONTACT HERO
+========================== -->
+
+<!-- <section class="contact-hero">
+
+    <div class="contact-hero-container">
+
+        <div class="contact-left">
+
+            <span>GET IN TOUCH</span>
+
+            <h1>
+                We'd Love to Hear
+                From You
+            </h1>
+
+            <p>
+                Whether you have questions about admissions, AI certifications,
+                vocational programs, or student services, our team is here to help.
+                Contact NIPAS today and take the first step toward your future.
+            </p>
+
+            <a href="#contact-form" class="contact-btn">
+                Send Message
+            </a>
+
+        </div>
+
+        <div class="contact-right">
+
+            <img src="images/logo.webp" alt="NIPAS">
+
+        </div>
+
+    </div>
+
+</section> -->
+
+<!-- CONTACT INFO -->
+
+<section class="contact-info">
+
+    <div class="contact-card">
+
+        <i class="fa-solid fa-phone"></i>
+
+        <h3>Phone</h3>
+
+        <p>+92 XXX XXXXXXX</p>
+
+    </div>
+
+    <div class="contact-card">
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <h3>Email</h3>
+
+        <p>info@nipas.edu.pk</p>
+
+    </div>
+
+    <div class="contact-card">
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        <h3>Campus</h3>
+
+        <p>Islamabad, Pakistan</p>
+
+    </div>
+
+    <div class="contact-card">
+
+        <i class="fa-solid fa-clock"></i>
+
+        <h3>Office Hours</h3>
+
+        <p>Mon - Sat | 9:00 AM - 5:00 PM</p>
+
+    </div>
+
+</section>
+
+<!-- CONTACT FORM -->
+
+<section class="contact-section" id="contact-form">
+
+    <div class="contact-wrapper">
+
+        <div class="contact-form">
+
+            <h2>Send Us a Message</h2>
+
+            <form>
+
+                <div class="row">
+
+                    <input type="text" placeholder="Full Name">
+
+                    <input type="email" placeholder="Email Address">
+
+                </div>
+
+                <div class="row">
+
+                    <input type="text" placeholder="Phone Number">
+
+                    <input type="text" placeholder="Subject">
+
+                </div>
+
+                <textarea rows="7" placeholder="Write your message..."></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="contact-side">
+
+            <h2>Why Contact NIPAS?</h2>
+
+            <p>
+                Our admissions and student support teams are available to answer
+                your questions regarding admissions, AI certifications,
+                vocational training, scholarships, and academic programs.
+            </p>
+
+            <ul>
+
+                <li><i class="fa-solid fa-check"></i> Admission Guidance</li>
+
+                <li><i class="fa-solid fa-check"></i> AI Certifications</li>
+
+                <li><i class="fa-solid fa-check"></i> Vocational Programs</li>
+
+                <li><i class="fa-solid fa-check"></i> Student Support</li>
+
+                <li><i class="fa-solid fa-check"></i> Career Counseling</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MAP -->
+
+<section class="contact-map">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d850581.3128038379!2d73.086108!3d33.616116!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3bdb02b6!2sIslamabad%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1782829616244!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</section>
+
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <!-- About -->
+        <div class="footer-box">
+
+            <img src="images/logo.webp" alt="NIPAS Logo" class="footer-logo">
+
+            <p>
+                NIPAS College of Science & Technology is committed to delivering
+                quality education through innovation, practical learning, and
+                career-oriented programs that empower students for a brighter future.
+            </p>
+
+            <div class="footer-social">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            </div>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about-us.html">About</a></li>
+
+                <li><a href="contact-us.html">Contact Us</a></li>
+
+                <li><a href="nipas-college.html">NIPAS College</a></li>
+
+                <li><a href="vocational-training.html">Vocational Training</a></li>
+
+                <li><a href="ai-certification.html">AI Certification</a></li>
+                <li><a href="skill-development.html">Skill Development</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+
+        <div class="footer-box">
+
+            <h3>Contact Info</h3>
+
+            <ul class="contact-list">
+
+                <li>
+                    <i class="fas fa-location-dot"></i>
+                    Main G.T Road, Tarnol, Islamabad
+                </li>
+
+                <li>
+                    <i class="fas fa-phone"></i>
+                    +92 51 268 092
+                </li>
+
+                <li>
+                    <i class="fas fa-mobile-screen"></i>
+                    +92 333 6534464
+                </li>
+
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    info@nipas.edu.pk
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Map -->
+
+        <div class="footer-box">
+
+            <h3>Find Us</h3>
+
+            <iframe
+                src="https://www.google.com/maps?q=Islamabad&output=embed"
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 NIPAS College of Science & Technology. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+    
+</body>
+</html>
