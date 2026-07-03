@@ -567,7 +567,7 @@ padding:8px 28px;
 .about-section{
 
     background:#f5f8fc;
-    padding:100px 0;
+    padding:60px 0;
 }
 
 .container{
@@ -582,7 +582,7 @@ padding:8px 28px;
     align-items:center;
 }
 
-.sub-title{
+.about-section .sub-title{
 
     color:#c28a2c;
     font-size:14px;
@@ -851,8 +851,7 @@ grid-template-columns:1fr;
 
 
 .programs{
-    padding:100px 7%;
-    background:#f7f9fc;
+    padding:60px 20px;
 }
 
 .section-heading{
@@ -2184,4 +2183,131 @@ width:220px;
 
     }
 
+}
+.slick-dotted.slick-slider{
+    margin: 0;
+}
+
+
+
+.new-program-card-box{
+    position:relative;
+    display:block;
+    /* width:390px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 20px;
+    height:300px;
+    overflow:hidden;
+    border-radius:8px;
+    text-decoration:none;
+    color:#fff;
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+
+.new-program-card-box::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    transition:transform .5s ease;
+}
+#new-program-card-box1::before{
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStibim3ro7gK0DBVNMXRkJAXhCCR1ct0bhAwGIrBfL4lqBz7VtO2MNrWU&s=10") center center/cover no-repeat;
+}
+#new-program-card-box2::before{
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfCg_nbOiSPrDPLRC1KOJMMMEKNtdwu8YVTytaWMLtN7ZGP1jv2N0933o&s=10") center center/cover no-repeat;
+}
+#new-program-card-box3::before{
+    background:url("https://www.pharmaceutical-technology.com/wp-content/uploads/sites/24/2021/05/shutterstock_1568576131-compressed-scaled.jpg") center center/cover no-repeat;
+}
+#new-program-card-box4::before{
+    background:url("https://blog.cuw.edu/wp-content/uploads/rad-tech-1-scaled-1.jpg") center center/cover no-repeat;
+}
+#new-program-card-box5::before{
+    background:url("https://academiamag.com/wp-content/uploads/2022/12/istockphoto-1170755336-612x612-1.jpg.webp") center center/cover no-repeat;
+}
+#new-program-card-box6::before{
+    background:url("https://fahs.ac.in/processweb/432/270/100/courses/cardiac-technology.webp") center center/cover no-repeat;
+}
+#new-program-card-box7::before{
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6yL0-_elvfGqdy5HkYLAkDyfaiisfQXg4AYS8EGliXmYUqLtMGYjItZRa&s=10") center center/cover no-repeat;
+}
+#new-program-card-box8::before{
+    background:url("https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1528793435727-N2B7J75TYS1ATYYLFU93/Man+running+with+a+technology+overlay.jpg") center center/cover no-repeat;
+}
+#new-program-card-box9::before{
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh5rcOVj9ByKyayERP1yTyf80NLLT0YraVO0e_mD75TsRV9W7N1gXZFxBs&s=10") center center/cover no-repeat;
+}
+#new-program-card-box10::before{
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsPkm8LZ2iW8CMYPaQpCSsw3MtbSPEXLIKAwPqgmjTA8yb-mI4m5Qcybc&s=10") center center/cover no-repeat;
+}
+#new-program-card-box11::before{
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxUD-_UTuEmC2ib9POh2ZuAVjtTAIPDEV6fesdt1X-_k-UNT642E81RXlC&s=10") center center/cover no-repeat;
+}
+#new-program-card-box12::before{
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwrMh0JP3oVPlPHUj_nBQ0YcIlMM-Esr9oQU0gIEJ_iP4GyNf11EzX77E&s=10") center center/cover no-repeat;
+}
+
+
+.new-program-card-box::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.90) 8%,
+        rgba(0,0,0,.45) 45%,
+        rgba(0,0,0,.05) 100%
+    );
+}
+
+.new-program-card-box:hover::before{
+    transform:scale(1.08);
+}
+
+.new-program-card-content{
+    z-index:2;
+}
+.new-program-card-title{
+    font-size: medium ;
+    font-weight:700;
+    margin-bottom:14px;
+    text-shadow:0 2px 5px rgba(0,0,0,.5);
+}
+
+.new-program-card-info{
+    font-size:small;
+}
+
+.new-program-card-info strong{
+    display:block;
+    margin-bottom:10px;
+    font-size:small;
+}
+
+.new-program-card-box:hover{
+    box-shadow:0 18px 40px rgba(0,0,0,.35);
+}
+.new-program-grid{
+    grid-template-columns:repeat(3,1fr);
+    gap: 20px;
+}
+@media(max-width:1200px){
+
+.new-program-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.new-program-grid{
+
+grid-template-columns:1fr;
+
+}
 }

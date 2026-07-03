@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIPAS Education System </title>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+       <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header>
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.webp" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Navigation -->
+        <ul class="nav-links">
+
+            <li><a href="index.html" class="active">Home</a></li>
+
+            <li><a href="about-us.html">About</a></li>
+
+            <li class="dropdown">
+
+                <a href="#" class="dropdown-toggle">
+                    Focus <i class="fas fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="nipas-college.html">NIPAS College</a></li>
+                    <li><a href="vocational-training.html">Vocational Training</a></li>
+                    <li><a href="ai-certification.html">AI Certification</a></li>
+                    <li><a href="skill-development.html">Skills Development</a></li>
+                </ul>
+
+            </li>
+
+            <li><a href="contact-us.html">Contact Us</a></li>
+
+        </ul>
+
+        <!-- Right -->
+        <div class="nav-right">
+
+            <!-- <a href="#" class="admission-btn">
+                Admissions 2024-25
+            </a> -->
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </div>
+
+    </nav>
+</header>
+
+<script>
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+const dropdown = document.querySelector(".dropdown");
+const dropdownToggle = document.querySelector(".dropdown-toggle");
+
+// Mobile Menu
+
+menuBtn.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+
+        menuBtn.innerHTML='<i class="fas fa-times"></i>';
+
+    }else{
+
+        menuBtn.innerHTML='<i class="fas fa-bars"></i>';
+
+        dropdown.classList.remove("active");
+
+    }
+
+});
+
+// Mobile Dropdown
+
+dropdownToggle.addEventListener("click", function(e){
+
+    if(window.innerWidth <= 991){
+
+        e.preventDefault();
+
+        dropdown.classList.toggle("active");
+
+    }
+
+});
+
+// Resize Reset
+
+window.addEventListener("resize",()=>{
+
+    if(window.innerWidth > 991){
+
+        navLinks.classList.remove("active");
+        dropdown.classList.remove("active");
+        menuBtn.innerHTML='<i class="fas fa-bars"></i>';
+
+    }
+
+});
+</script>
+
+
+<!-- Hero -->
+ <section class="hero-slider">
+
+    <!-- Slide 1 -->
+    <div class="hero-slide" style="background-image:url('https://www.inside.unsw.edu.au/sites/default/files/article/AdobeStock_413459012%20AI%201200px.jpg');">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <span>Welcome to NIPAS</span>
+
+            <h1>
+                AI Certifications for the Future Workforce
+            </h1>
+
+            <p>
+                Gain globally relevant Artificial Intelligence certifications designed to prepare students and professionals for tomorrow's technology-driven careers through practical learning and industry-focused training.
+            </p>
+
+            <a href="ai-certification.html" class="hero-btn">
+                Explore AI Certifications
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Slide 2 -->
+
+    <div class="hero-slide" style="background-image:url('https://media.istockphoto.com/id/2173915109/photo/skill-competency-development-concept-up-new-ability-skill-training-for-technology-evolution.jpg?s=612x612&w=0&k=20&c=xjzDpZbVEdCXCOUqM6JzqVf8XmkK46vu05JwTc3QU8U=');">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <span>Career Focused Learning</span>
+
+            <h1>
+                Professional Vocational Training Programs
+            </h1>
+
+            <p>
+                Build practical expertise with hands-on vocational courses designed to meet current industry demands and enhance employability across multiple professional sectors.
+            </p>
+
+            <a href="vocational-training.html" class="hero-btn">
+                View Vocational Training
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Slide 3 -->
+
+    <div class="hero-slide" style="background-image:url('https://wallpapercave.com/wp/wp2090171.jpg');">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <span>Learn. Practice. Succeed.</span>
+
+            <h1>
+                Skills Development for Modern Careers
+            </h1>
+
+            <p>
+                Develop essential technical and professional skills through innovative training programs that empower learners for success in today's competitive global marketplace.
+            </p>
+
+            <a href="skill-development.html" class="hero-btn">
+                View Skill Development
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Slide 4 -->
+
+    <div class="hero-slide" style="background-image:url('https://t4.ftcdn.net/jpg/06/30/76/11/360_F_630761173_Hkeqf7J3DYfICjQQaMkTiSpCOK7XOq1q.jpg');">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <span>Excellence in Education</span>
+
+            <h1>
+                Welcome to NIPAS College
+            </h1>
+
+            <p>
+                Experience quality education, expert faculty, and a future-ready learning environment dedicated to shaping skilled professionals and successful leaders.
+            </p>
+
+            <a href="nipas-college.html" class="hero-btn">
+                View NIPAS College
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    $('.hero-slider').slick({
+
+    arrows:false,
+
+    dots:true,
+
+    infinite:true,
+
+    autoplay:true,
+
+    autoplaySpeed:5000,
+
+    speed:1000,
+
+    fade:true,
+
+    cssEase:'linear',
+
+    pauseOnHover:false
+
+});
+</script>
+
+
+<section class="about-section">
+
+    <div class="container">
+
+        <div class="about-left">
+
+            <span class="sub-title">WELCOME TO</span>
+
+            <h2>
+                NIPAS College of Science & Technology
+            </h2>
+
+            <p class="intro">
+                NIPAS is committed to delivering quality education through innovation,
+                practical learning, and industry-focused programs. We prepare students
+                with the knowledge, technical expertise, and confidence required for
+                successful careers in today's rapidly evolving world.
+            </p>
+
+            <div class="image-wrapper">
+
+                <img src="images/campus-img.webp"
+                    class="main-img">
+
+            </div>
+
+        </div>
+
+
+        <div class="about-right">
+
+            <div class="point">
+                <i class="fa-solid fa-chevron-right"></i>
+                <p>Delivering career-oriented education with internationally recognized standards.</p>
+            </div>
+
+            <div class="point">
+                <i class="fa-solid fa-chevron-right"></i>
+                <p>Hands-on practical training supported by experienced faculty and modern labs.</p>
+            </div>
+
+            <div class="point">
+                <i class="fa-solid fa-chevron-right"></i>
+                <p>Industry-focused curriculum designed to meet future workforce demands.</p>
+            </div>
+
+            <div class="point">
+                <i class="fa-solid fa-chevron-right"></i>
+                <p>Student-centered learning environment promoting innovation and research.</p>
+            </div>
+
+            <div class="point">
+                <i class="fa-solid fa-chevron-right"></i>
+                <p>Developing future leaders through technical excellence and professional ethics.</p>
+            </div>
+
+            <div class="counter-box">
+
+                <div class="counter">
+
+                    <i class="fa-solid fa-user-graduate"></i>
+
+                    <h3>15+</h3>
+
+                    <span>Faculty Members</span>
+
+                </div>
+
+                <div class="counter">
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                    <h3>10+</h3>
+
+                    <span>Programs</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Mission Vision -->
+ <section class="mission-vision">
+
+    <div class="mission-box">
+
+        <div class="content">
+
+            <span class="sub-title">OUR PURPOSE</span>
+
+            <h2>Mission</h2>
+
+            <p>
+                NIPAS College of Science & Technology is committed to providing
+                quality education through innovation, research, and practical
+                learning. Our mission is to empower students with modern skills,
+                professional ethics, and industry-focused knowledge, enabling
+                them to become confident leaders who contribute positively to
+                society and the nation's development.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="vision-box">
+
+        <div class="content">
+
+            <span class="sub-title">OUR FUTURE</span>
+
+            <h2>Vision</h2>
+
+            <p>
+                Our vision is to become a leading institution recognized for
+                academic excellence, technological innovation, and career-oriented
+                education. We strive to nurture skilled, ethical, and visionary
+                graduates who are prepared to excel in the global workforce and
+                create meaningful impact in their communities.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="programs">
+
+    <div class="section-heading">
+
+        <span>ACADEMICS</span>
+
+        <h2>Pioneers In</h2>
+
+        <p>
+            Empowering students with future-ready education through academic excellence,
+            innovation, and practical learning.
+        </p>
+
+    </div>
+
+    <div class="program-grid new-program-grid">
+
+
+<a href="apply.html" class="new-program-card-box" id="new-program-card-box1">
+
+    <div class="new-program-card-content">
+
+        <h2 class="new-program-card-title">
+            F.Sc Medical Lab Technology (MLT)
+        </h2>
+
+        <div class="new-program-card-info">
+            <strong>Eligibility Criteria:</strong>
+            – Matric in Science (Biology, Chemistry, Physics)<br>
+            – Minimum 50% Marks
+        </div>
+
+    </div>
+
+</a>
+<!-- F.Sc Operation Theater Technology (OTT) -->
+<a href="apply.html" class="new-program-card-box" id="new-program-card-box2">
+    <div class="new-program-card-content">
+        <h2 class="new-program-card-title">
+            F.Sc Operation Theater Technology (OTT)
+        </h2>
+        <div class="new-program-card-info">
+            <strong>Eligibility Criteria:</strong>
+            – Matric in Science (Biology, Chemistry, Physics)<br>
+            – Minimum 50% Marks
+        </div>
+    </div>
+</a>
+
+<!-- F.Sc Dispensing Technology (DT) -->
+<a href="apply.html" class="new-program-card-box" id="new-program-card-box3">
+    <div class="new-program-card-content">
+        <h2 class="new-program-card-title">
+            F.Sc Dispensing Technology (DT)
+        </h2>
+        <div class="new-program-card-info">
+            <strong>Eligibility Criteria:</strong>
+            – Matric in Science (Biology, Chemistry, Physics)<br>
+            – Minimum 50% Marks
+        </div>
+    </div>
+</a>
+
+<!-- F.Sc Radiology Technology (MIT) -->
+<a href="apply.html" class="new-program-card-box" id="new-program-card-box4">
+    <div class="new-program-card-content">
+        <h2 class="new-program-card-title">
+            F.Sc Radiology Technology (MIT)
+        </h2>
+        <div class="new-program-card-info">
+            <strong>Eligibility Criteria:</strong>
+            – Matric in Science (Biology, Chemistry, Physics)<br>
+            – Minimum 50% Marks
+        </div>
+    </div>
+</a>
+
+<!-- F.Sc Dental Hygiene Technology (DHT) -->
+<a href="apply.html" class="new-program-card-box" id="new-program-card-box5">
+    <div class="new-program-card-content">
+        <h2 class="new-program-card-title">
+            F.Sc Dental Hygiene Technology (DHT)
+        </h2>
+        <div class="new-program-card-info">
+            <strong>Eligibility Criteria:</strong>
+            – Matric in Science (Biology, Chemistry, Physics)<br>
+            – Minimum 50% Marks
+        </div>
+    </div>
+</a>
+
+<!-- F.Sc Cardiac Technology (CT) -->
+<a href="apply.html" class="new-program-card-box" id="new-program-card-box6">
+    <div class="new-program-card-content">
+        <h2 class="new-program-card-title">
+            F.Sc Cardiac Technology (CT)
+        </h2>
+        <div class="new-program-card-info">
+            <strong>Eligibility Criteria:</strong>
+            – Matric in Science (Biology, Chemistry, Physics)<br>
+            – Minimum 50% Marks
+        </div>
+    </div>
+</a>
+
+<!-- F.Sc Ophthalmology Technology (OT) -->
+<a href="apply.html" class="new-program-card-box" id="new-program-card-box7">
+    <div class="new-program-card-content">
+        <h2 class="new-program-card-title">
+            F.Sc Ophthalmology Technology (OT)
+        </h2>
+        <div class="new-program-card-info">
+            <strong>Eligibility Criteria:</strong>
+            – Matric in Science (Biology, Chemistry, Physics)<br>
+            – Minimum 50% Marks
+        </div>
+    </div>
+</a>
+
+<!-- F.Sc Physiotherapy Technology (PHT) -->
+<a href="apply.html" class="new-program-card-box" id="new-program-card-box8">
+    <div class="new-program-card-content">
+        <h2 class="new-program-card-title">
+            F.Sc Physiotherapy Technology (PHT)
+        </h2>
+        <div class="new-program-card-info">
+            <strong>Eligibility Criteria:</strong>
+            – Matric in Science (Biology, Chemistry, Physics)<br>
+            – Minimum 50% Marks
+        </div>
+    </div>
+</a>
+
+<!-- F.Sc Pre-Medical -->
+<a href="apply.html" class="new-program-card-box" id="new-program-card-box9">
+    <div class="new-program-card-content">
+        <h2 class="new-program-card-title">
+            F.Sc Pre-Medical
+        </h2>
+        <div class="new-program-card-info">
+            <strong>Eligibility Criteria:</strong>
+            – Matric in Science (Biology, Chemistry, Physics)<br>
+            – Minimum 70% Marks
+        </div>
+    </div>
+</a>
+
+<!-- F.Sc Pre-Engineering -->
+<a href="apply.html" class="new-program-card-box" id="new-program-card-box10">
+    <div class="new-program-card-content">
+        <h2 class="new-program-card-title">
+            F.Sc Pre-Engineering
+        </h2>
+        <div class="new-program-card-info">
+            <strong>Eligibility Criteria:</strong>
+            – Matric in Science<br>
+            – Minimum 70% Marks
+        </div>
+    </div>
+</a>
+
+<!-- Intermediate of Computer Science (ICS) -->
+<a href="apply.html" class="new-program-card-box" id="new-program-card-box11">
+    <div class="new-program-card-content">
+        <h2 class="new-program-card-title">
+            Intermediate of Computer Science (I.C.S)
+        </h2>
+        <div class="new-program-card-info">
+            <strong>Eligibility Criteria:</strong>
+            – Matric in Science<br>
+            – Minimum 60% Marks
+        </div>
+    </div>
+</a>
+
+<!-- Intermediate of Commerce (I.Com) -->
+<a href="apply.html" class="new-program-card-box" id="new-program-card-box12">
+    <div class="new-program-card-content">
+        <h2 class="new-program-card-title">
+            Intermediate of Commerce (I.Com)
+        </h2>
+        <div class="new-program-card-info">
+            <strong>Eligibility Criteria:</strong>
+            – Matric<br>
+            – Minimum 45% Marks
+        </div>
+    </div>
+</a>
+
+<script>
+document.querySelector(".new-program-card-box").addEventListener("click",function(e){
+    // window.location.href = "program-details.html";
+});
+</script>
+
+        
+    </div>
+
+</section>
+
+<section class="cta-section">
+
+    <div class="cta-overlay"></div>
+
+    <div class="cta-content">
+
+        <span>JOIN NIPAS TODAY</span>
+
+        <h2>
+            Shape Your Future with <br>
+            Quality Education & Professional Skills
+        </h2>
+
+        <p>
+            Whether you're looking for higher education, vocational training,
+            AI certifications, or professional skill development, NIPAS provides
+            the knowledge, practical experience, and guidance to help you succeed.
+        </p>
+
+        <div class="cta-buttons">
+            <a href="contact-us.html" class="btn-primary">Contact Now</a>
+            <a href="about-us.html" class="btn-outline">About NIPAS</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="affiliation">
+
+    <div class="container">
+
+        <span class="section-subtitle">AFFILIATION</span>
+
+        <h2>Federal Board Affiliation</h2>
+
+        <p>
+            NIPAS College of Science & Technology is proudly affiliated with the
+            <strong>Federal Board of Intermediate & Secondary Education (FBISE),
+            Islamabad.</strong> Our affiliation ensures nationally recognized
+            qualifications, academic excellence, and quality education that prepares
+            students for higher studies and successful careers.
+        </p>
+
+        <img src="https://hacst.edu.pk/wp-content/uploads/2024/05/logo_header-768x219.png"
+            alt="Federal Board Logo">
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <!-- About -->
+        <div class="footer-box">
+
+            <img src="images/logo.webp" alt="NIPAS Logo" class="footer-logo">
+
+            <p>
+                NIPAS College of Science & Technology is committed to delivering
+                quality education through innovation, practical learning, and
+                career-oriented programs that empower students for a brighter future.
+            </p>
+
+            <div class="footer-social">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            </div>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about-us.html">About</a></li>
+
+                <li><a href="contact-us.html">Contact Us</a></li>
+
+                <li><a href="nipas-college.html">NIPAS College</a></li>
+
+                <li><a href="vocational-training.html">Vocational Training</a></li>
+
+                <li><a href="ai-certification.html">AI Certification</a></li>
+                <li><a href="skill-development.html">Skill Development</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+
+        <div class="footer-box">
+
+            <h3>Contact Info</h3>
+
+            <ul class="contact-list">
+
+                <li>
+                    <i class="fas fa-location-dot"></i>
+                    Main G.T Road, Tarnol, Islamabad
+                </li>
+
+                <li>
+                    <i class="fas fa-phone"></i>
+                    +92 51 268 092
+                </li>
+
+                <li>
+                    <i class="fas fa-mobile-screen"></i>
+                    +92 333 6534464
+                </li>
+
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    info@nipas.edu.pk
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Map -->
+
+        <div class="footer-box">
+
+            <h3>Find Us</h3>
+
+            <iframe
+                src="https://www.google.com/maps?q=Islamabad&output=embed"
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 NIPAS College of Science & Technology. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+    
+</body>
+</html>
